@@ -75,13 +75,20 @@
             #endregion
             #region Q5
             //leaderboard[999] => هيحصل Exception 
-            if (leaderboard.TryGetValue(999, out string player))
+            //if (leaderboard.TryGetValue(999, out string player))
+            //{
+            //    Console.WriteLine(player);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Player not found");
+            //}
+            #endregion
+            #region Q6
+            leaderboard.Remove(200);
+            foreach (var entry in leaderboard)
             {
-                Console.WriteLine(player);
-            }
-            else
-            {
-                Console.WriteLine("Player not found");
+                Console.WriteLine($"{entry.Key} = {entry.Value}");
             }
             #endregion
 
