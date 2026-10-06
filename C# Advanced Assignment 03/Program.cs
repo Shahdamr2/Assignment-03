@@ -226,7 +226,6 @@
 
             #endregion
             #region Exercise 5 - Print Queue Simulator
-
             #region Q1
             Queue<string> printQueue = new Queue<string>();
 
@@ -239,6 +238,11 @@
             Console.WriteLine(string.Join(", ", printQueue));
 
             Console.WriteLine($"Count: {printQueue.Count}");
+            #endregion
+            #region Q2
+
+            Console.WriteLine($"Next document: {printQueue.Peek()}");
+
             #endregion
 
             #endregion
