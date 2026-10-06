@@ -246,11 +246,23 @@
             #endregion
             #region Q3
 
-            while (printQueue.Count > 0)
-            {
-                string document = printQueue.Dequeue();
+            //while (printQueue.Count > 0)
+            //{
+            //    string document = printQueue.Dequeue();
 
+            //    Console.WriteLine($"Printing: {document}");
+            //}
+
+            #endregion
+            #region Q4
+
+            if (printQueue.TryDequeue(out string document))
+            {
                 Console.WriteLine($"Printing: {document}");
+            }
+            else
+            {
+                Console.WriteLine("Queue is empty.");
             }
 
             #endregion
