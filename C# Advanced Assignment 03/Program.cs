@@ -36,8 +36,15 @@
             //Console.WriteLine(string.Join(", ", grades));
             #endregion
             #region Q7
-            bool has100= grades.Any(x => x == 100);
-            Console.WriteLine(has100);
+            //bool has100= grades.Any(x => x == 100);
+            //Console.WriteLine(has100);
+            #endregion
+            #region Q8
+            List<string> gradeMessages = grades.Select(x => $"grade : {x}").ToList();
+            foreach(string message in gradeMessages)
+            {
+                Console.WriteLine(message);
+            }
             #endregion
 
             #endregion
