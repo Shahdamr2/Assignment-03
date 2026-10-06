@@ -30,6 +30,11 @@
             Console.WriteLine("Failing Grades:");
             Console.WriteLine(string.Join(", ", GradesBelow75));
             #endregion
+            #region Q6
+            grades.RemoveAll(x => x < 75);
+            Console.WriteLine("Grades after removing failing grades:");
+            Console.WriteLine(string.Join(", ", grades));
+            #endregion
 
             #endregion
         }
