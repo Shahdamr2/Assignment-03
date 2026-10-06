@@ -256,17 +256,31 @@
             #endregion
             #region Q4
 
-            if (printQueue.TryDequeue(out string document))
-            {
-                Console.WriteLine($"Printing: {document}");
-            }
-            else
-            {
-                Console.WriteLine("Queue is empty.");
-            }
+            //if (printQueue.TryDequeue(out string document))
+            //{
+            //    Console.WriteLine($"Printing: {document}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Queue is empty.");
+            //}
 
             #endregion
 
+            #endregion
+            #region Exercise 6 - Browser History
+
+            #region Q1
+
+            Stack<string> browserHistory = new Stack<string>();
+
+            browserHistory.Push("google.com");
+            browserHistory.Push("github.com");
+            browserHistory.Push("stackoverflow.com");
+            browserHistory.Push("youtube.com");
+            browserHistory.Push("claude.ai");
+
+            #endregion
             #endregion
 
 
