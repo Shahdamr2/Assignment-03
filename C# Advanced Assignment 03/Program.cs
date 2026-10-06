@@ -40,14 +40,26 @@
             //Console.WriteLine(has100);
             #endregion
             #region Q8
-            List<string> gradeMessages = grades.Select(x => $"grade : {x}").ToList();
-            foreach(string message in gradeMessages)
-            {
-                Console.WriteLine(message);
-            }
+            //List<string> gradeMessages = grades.Select(x => $"grade : {x}").ToList();
+            //foreach(string message in gradeMessages)
+            //{
+            //    Console.WriteLine(message);
+            //}
             #endregion
 
             #endregion
+            #region Exercise 2 - Leaderboard
+            #region Q1
+            Dictionary<int, string> leaderboard = new Dictionary<int, string>();
+            leaderboard.Add(500, "Shahd");
+            leaderboard.Add(200, "Amr");
+            leaderboard.Add(800, "Ali");
+            leaderboard.Add(350, "Mona");
+            #endregion
+
+            #endregion
+
+
         }
     }
 }
