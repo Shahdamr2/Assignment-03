@@ -110,18 +110,26 @@
             #endregion
             #region Q3
 
-            try
-            {
-                phoneBook.Add("Shahd", "01111111111");
+            //try
+            //{
+            //    phoneBook.Add("Shahd", "01111111111");
 
-                Console.WriteLine("Added Successfully");
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine("Duplicate Key!");
-                Console.WriteLine($"Error: {ex.Message}");
-            }
+            //    Console.WriteLine("Added Successfully");
+            //}
+            //catch (ArgumentException ex)
+            //{
+            //    Console.WriteLine("Duplicate Key!");
+            //    Console.WriteLine($"Error: {ex.Message}");
+            //}
             #endregion
+            #region Q4
+
+            bool added = phoneBook.TryAdd("Ahmed", "01111111111");
+
+            Console.WriteLine($"Added: {added}");
+
+            #endregion
+
 
             #endregion
 
