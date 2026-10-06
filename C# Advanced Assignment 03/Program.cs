@@ -50,11 +50,17 @@
             #endregion
             #region Exercise 2 - Leaderboard
             #region Q1
-            Dictionary<int, string> leaderboard = new Dictionary<int, string>();
+            SortedDictionary<int, string> leaderboard = new SortedDictionary<int, string>();
             leaderboard.Add(500, "Shahd");
             leaderboard.Add(200, "Amr");
             leaderboard.Add(800, "Ali");
             leaderboard.Add(350, "Mona");
+            #endregion
+            #region Q2
+            foreach (var entry in leaderboard)
+            {
+                Console.WriteLine($"{entry.Key} = {entry.Value}");
+            }
             #endregion
 
             #endregion
