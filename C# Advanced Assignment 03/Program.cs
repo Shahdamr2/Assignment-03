@@ -150,14 +150,20 @@
             #endregion
             #region Q7
 
-            Console.WriteLine("Keys:");
-            Console.WriteLine(string.Join(", ", phoneBook.Keys));
+            //Console.WriteLine("Keys:");
+            //Console.WriteLine(string.Join(", ", phoneBook.Keys));
 
-            Console.WriteLine("Values:");
-            Console.WriteLine(string.Join(", ", phoneBook.Values));
+            //Console.WriteLine("Values:");
+            //Console.WriteLine(string.Join(", ", phoneBook.Values));
 
             #endregion
 
+            #endregion
+            #region Exercise 4 - Unique Email Validator
+            #region Q1
+            HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+            #endregion
 
             #endregion
 
