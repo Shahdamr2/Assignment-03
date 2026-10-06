@@ -85,13 +85,19 @@
             //}
             #endregion
             #region Q6
-            leaderboard.Remove(200);
-            foreach (var entry in leaderboard)
-            {
-                Console.WriteLine($"{entry.Key} = {entry.Value}");
-            }
+            //leaderboard.Remove(200);
+            //foreach (var entry in leaderboard)
+            //{
+            //    Console.WriteLine($"{entry.Key} = {entry.Value}");
+            //}
             #endregion
-
+            #endregion
+            #region Exercise 3 - Phone Book
+            Dictionary<string, string> phoneBook = new Dictionary<string, string>();
+            phoneBook.Add("Shahd", "01157220098");
+            phoneBook.Add("Sara", "01123456789");
+            phoneBook.Add("Mona", "01234567890");
+            phoneBook.Add("Omar", "01555555555");
             #endregion
 
 
