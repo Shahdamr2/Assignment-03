@@ -57,10 +57,17 @@
             leaderboard.Add(350, "Mona");
             #endregion
             #region Q2
-            foreach (var entry in leaderboard)
-            {
-                Console.WriteLine($"{entry.Key} = {entry.Value}");
-            }
+            //foreach (var entry in leaderboard)
+            //{
+            //    Console.WriteLine($"{entry.Key} = {entry.Value}");
+            //}
+            #endregion
+            #region Q3
+            int firstKey = leaderboard.First().Key;
+            string firstValue = leaderboard.First().Value;
+
+            Console.WriteLine($"First Key: {firstKey}");
+            Console.WriteLine($"First Value: {firstValue}");
             #endregion
 
             #endregion
