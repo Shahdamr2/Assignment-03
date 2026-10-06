@@ -184,16 +184,17 @@
             HashSet<int> setB = new HashSet<int> { 4, 5, 6, 7, 8 };
 
             #endregion
-            #region Q5 — UnionWith
+            #region Q5 - UnionWith
 
-            //HashSet<int> union = new HashSet<int>(setA);
+            HashSet<int> union = new HashSet<int>(setA);
 
-            //union.UnionWith(setB);
+            union.UnionWith(setB);
 
-            //Console.WriteLine("Union:");
-            //Console.WriteLine(string.Join(", ", union));
+            Console.WriteLine("Union:");
+            Console.WriteLine(string.Join(", ", union));
 
             #endregion
+
             #region Q5 - IntersectWith
 
             HashSet<int> intersection = new HashSet<int>(setA);
@@ -204,9 +205,6 @@
             Console.WriteLine(string.Join(", ", intersection));
 
             #endregion
-
-            
-
 
             #endregion
 
