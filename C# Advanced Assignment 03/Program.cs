@@ -287,12 +287,17 @@
             #endregion
             #region Q3
 
-            for (int i = 0; i < 3; i++)
-            {
-                string page = browserHistory.Pop();
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    string page = browserHistory.Pop();
 
-                Console.WriteLine($"Leaving: {page}");
-            }
+            //    Console.WriteLine($"Leaving: {page}");
+            //}
+
+            #endregion
+            #region Q4
+
+            Console.WriteLine($"Current page: {browserHistory.Peek()}");
 
             #endregion
             #endregion
