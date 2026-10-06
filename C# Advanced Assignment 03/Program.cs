@@ -26,14 +26,18 @@
             //Console.WriteLine($"First grade above 90: {firstAbove90}");
             #endregion
             #region Q5
-            List<int> GradesBelow75 = grades.Where(x => x < 75).ToList();
-            Console.WriteLine("Failing Grades:");
-            Console.WriteLine(string.Join(", ", GradesBelow75));
+            //List<int> GradesBelow75 = grades.Where(x => x < 75).ToList();
+            //Console.WriteLine("Failing Grades:");
+            //Console.WriteLine(string.Join(", ", GradesBelow75));
             #endregion
             #region Q6
-            grades.RemoveAll(x => x < 75);
-            Console.WriteLine("Grades after removing failing grades:");
-            Console.WriteLine(string.Join(", ", grades));
+            //grades.RemoveAll(x => x < 75);
+            //Console.WriteLine("Grades after removing failing grades:");
+            //Console.WriteLine(string.Join(", ", grades));
+            #endregion
+            #region Q7
+            bool has100= grades.Any(x => x == 100);
+            Console.WriteLine(has100);
             #endregion
 
             #endregion
