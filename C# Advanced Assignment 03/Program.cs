@@ -131,9 +131,21 @@
             #endregion
             #region Q5
 
-            bool exists = phoneBook.ContainsKey("Khaled");
+            //bool exists = phoneBook.ContainsKey("Khaled");
 
-            Console.WriteLine($"Khaled exists: {exists}");
+            //Console.WriteLine($"Khaled exists: {exists}");
+
+            #endregion
+            #region Q6
+
+            if (phoneBook.TryGetValue("Khaled", out string phoneNumber))
+            {
+                Console.WriteLine(phoneNumber);
+            }
+            else
+            {
+                Console.WriteLine("Not Found");
+            }
 
             #endregion
 
