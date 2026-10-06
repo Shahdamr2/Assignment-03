@@ -216,12 +216,29 @@
             #endregion
             #region Q6
 
-            HashSet<int> subset = new HashSet<int> { 1, 2 };
+            //HashSet<int> subset = new HashSet<int> { 1, 2 };
 
-            bool isSubset = subset.IsSubsetOf(setA);
+            //bool isSubset = subset.IsSubsetOf(setA);
 
-            Console.WriteLine($"Is {{1, 2}} a subset of Set A? {isSubset}");
+            //Console.WriteLine($"Is {{1, 2}} a subset of Set A? {isSubset}");
 
+            #endregion
+
+            #endregion
+            #region Exercise 5 - Print Queue Simulator
+
+            #region Q1
+            Queue<string> printQueue = new Queue<string>();
+
+            printQueue.Enqueue("Report.pdf");
+            printQueue.Enqueue("Invoice.pdf");
+            printQueue.Enqueue("Letter.docx");
+            printQueue.Enqueue("Resume.pdf");
+            printQueue.Enqueue("Photo.jpg");
+            Console.WriteLine("Queue Contents:");
+            Console.WriteLine(string.Join(", ", printQueue));
+
+            Console.WriteLine($"Count: {printQueue.Count}");
             #endregion
 
             #endregion
