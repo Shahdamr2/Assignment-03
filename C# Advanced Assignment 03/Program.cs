@@ -138,14 +138,23 @@
             #endregion
             #region Q6
 
-            if (phoneBook.TryGetValue("Khaled", out string phoneNumber))
-            {
-                Console.WriteLine(phoneNumber);
-            }
-            else
-            {
-                Console.WriteLine("Not Found");
-            }
+            //if (phoneBook.TryGetValue("Khaled", out string phoneNumber))
+            //{
+            //    Console.WriteLine(phoneNumber);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not Found");
+            //}
+
+            #endregion
+            #region Q7
+
+            Console.WriteLine("Keys:");
+            Console.WriteLine(string.Join(", ", phoneBook.Keys));
+
+            Console.WriteLine("Values:");
+            Console.WriteLine(string.Join(", ", phoneBook.Values));
 
             #endregion
 
