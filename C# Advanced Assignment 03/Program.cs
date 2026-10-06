@@ -184,6 +184,16 @@
             HashSet<int> setB = new HashSet<int> { 4, 5, 6, 7, 8 };
 
             #endregion
+            #region Q5
+
+            HashSet<int> union = new HashSet<int>(setA);
+
+            union.UnionWith(setB);
+
+            Console.WriteLine("Union:");
+            Console.WriteLine(string.Join(", ", union));
+
+            #endregion
 
             #endregion
 
