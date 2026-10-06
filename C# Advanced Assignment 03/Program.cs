@@ -297,10 +297,26 @@
             #endregion
             #region Q4
 
-            Console.WriteLine($"Current page: {browserHistory.Peek()}");
+            //Console.WriteLine($"Current page: {browserHistory.Peek()}");
 
             #endregion
+            #region Q5
+
+            browserHistory.Clear();
+
+            if (browserHistory.TryPop(out string page))
+            {
+                Console.WriteLine($"Leaving: {page}");
+            }
+            else
+            {
+                Console.WriteLine("Stack is empty");
+            }
+
             #endregion
+
+            #endregion
+
 
 
         }
