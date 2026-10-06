@@ -269,7 +269,6 @@
 
             #endregion
             #region Exercise 6 - Browser History
-
             #region Q1
 
             Stack<string> browserHistory = new Stack<string>();
@@ -279,6 +278,11 @@
             browserHistory.Push("stackoverflow.com");
             browserHistory.Push("youtube.com");
             browserHistory.Push("claude.ai");
+
+            #endregion
+            #region Q2
+
+            Console.WriteLine($"Current page: {browserHistory.Peek()}");
 
             #endregion
             #endregion
