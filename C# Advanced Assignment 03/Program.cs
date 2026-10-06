@@ -93,11 +93,22 @@
             #endregion
             #endregion
             #region Exercise 3 - Phone Book
+            #region Q1
             Dictionary<string, string> phoneBook = new Dictionary<string, string>();
             phoneBook.Add("Shahd", "01157220098");
             phoneBook.Add("Sara", "01123456789");
             phoneBook.Add("Mona", "01234567890");
             phoneBook.Add("Omar", "01555555555");
+            #endregion
+            #region Q2
+            phoneBook["Amr"] = "01099999999";
+            foreach (var contact in phoneBook)
+            {
+                Console.WriteLine($"{contact.Key} = {contact.Value}");
+            }
+
+            #endregion
+
             #endregion
 
 
