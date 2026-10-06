@@ -22,8 +22,13 @@
             //Console.WriteLine(string.Join(",", grades));
             #endregion
             #region Q4
-            int firstAbove90= grades.First(x => x>90);
-            Console.WriteLine($"First grade above 90: {firstAbove90}");
+            //int firstAbove90= grades.First(x => x>90);
+            //Console.WriteLine($"First grade above 90: {firstAbove90}");
+            #endregion
+            #region Q5
+            List<int> GradesBelow75 = grades.Where(x => x < 75).ToList();
+            Console.WriteLine("Failing Grades:");
+            Console.WriteLine(string.Join(", ", GradesBelow75));
             #endregion
 
             #endregion
