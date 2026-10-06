@@ -101,12 +101,26 @@
             phoneBook.Add("Omar", "01555555555");
             #endregion
             #region Q2
-            phoneBook["Amr"] = "01099999999";
-            foreach (var contact in phoneBook)
-            {
-                Console.WriteLine($"{contact.Key} = {contact.Value}");
-            }
+            //phoneBook["Amr"] = "01099999999";
+            //foreach (var contact in phoneBook)
+            //{
+            //    Console.WriteLine($"{contact.Key} = {contact.Value}");
+            //}
 
+            #endregion
+            #region Q3
+
+            try
+            {
+                phoneBook.Add("Shahd", "01111111111");
+
+                Console.WriteLine("Added Successfully");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine("Duplicate Key!");
+                Console.WriteLine($"Error: {ex.Message}");
+            }
             #endregion
 
             #endregion
