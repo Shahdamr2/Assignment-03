@@ -63,11 +63,15 @@
             //}
             #endregion
             #region Q3
-            int firstKey = leaderboard.First().Key;
-            string firstValue = leaderboard.First().Value;
+            //int firstKey = leaderboard.First().Key;
+            //string firstValue = leaderboard.First().Value;
 
-            Console.WriteLine($"First Key: {firstKey}");
-            Console.WriteLine($"First Value: {firstValue}");
+            //Console.WriteLine($"First Key: {firstKey}");
+            //Console.WriteLine($"First Value: {firstValue}");
+            #endregion
+            #region Q4
+            leaderboard.ContainsKey(500);
+            Console.WriteLine($"Score 500 exists: {leaderboard.ContainsKey(500)}");
             #endregion
 
             #endregion
