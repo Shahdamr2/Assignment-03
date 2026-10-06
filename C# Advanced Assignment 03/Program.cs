@@ -206,12 +206,21 @@
             #endregion
             #region Q5 - ExceptWith
 
-            HashSet<int> difference = new HashSet<int>(setA);
+            //HashSet<int> difference = new HashSet<int>(setA);
 
-            difference.ExceptWith(setB);
+            //difference.ExceptWith(setB);
 
-            Console.WriteLine("Difference:");
-            Console.WriteLine(string.Join(", ", difference));
+            //Console.WriteLine("Difference:");
+            //Console.WriteLine(string.Join(", ", difference));
+
+            #endregion
+            #region Q6
+
+            HashSet<int> subset = new HashSet<int> { 1, 2 };
+
+            bool isSubset = subset.IsSubsetOf(setA);
+
+            Console.WriteLine($"Is {{1, 2}} a subset of Set A? {isSubset}");
 
             #endregion
 
