@@ -70,8 +70,19 @@
             //Console.WriteLine($"First Value: {firstValue}");
             #endregion
             #region Q4
-            leaderboard.ContainsKey(500);
-            Console.WriteLine($"Score 500 exists: {leaderboard.ContainsKey(500)}");
+            //leaderboard.ContainsKey(500);
+            //Console.WriteLine($"Score 500 exists: {leaderboard.ContainsKey(500)}");
+            #endregion
+            #region Q5
+            //leaderboard[999] => هيحصل Exception 
+            if (leaderboard.TryGetValue(999, out string player))
+            {
+                Console.WriteLine(player);
+            }
+            else
+            {
+                Console.WriteLine("Player not found");
+            }
             #endregion
 
             #endregion
