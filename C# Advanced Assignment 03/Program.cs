@@ -234,14 +234,24 @@
             printQueue.Enqueue("Letter.docx");
             printQueue.Enqueue("Resume.pdf");
             printQueue.Enqueue("Photo.jpg");
-            Console.WriteLine("Queue Contents:");
-            Console.WriteLine(string.Join(", ", printQueue));
+            //Console.WriteLine("Queue Contents:");
+            //Console.WriteLine(string.Join(", ", printQueue));
 
-            Console.WriteLine($"Count: {printQueue.Count}");
+            //Console.WriteLine($"Count: {printQueue.Count}");
             #endregion
             #region Q2
 
-            Console.WriteLine($"Next document: {printQueue.Peek()}");
+            //Console.WriteLine($"Next document: {printQueue.Peek()}");
+
+            #endregion
+            #region Q3
+
+            while (printQueue.Count > 0)
+            {
+                string document = printQueue.Dequeue();
+
+                Console.WriteLine($"Printing: {document}");
+            }
 
             #endregion
 
