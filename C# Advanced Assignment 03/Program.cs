@@ -186,14 +186,26 @@
             #endregion
             #region Q5 — UnionWith
 
-            HashSet<int> union = new HashSet<int>(setA);
+            //HashSet<int> union = new HashSet<int>(setA);
 
-            union.UnionWith(setB);
+            //union.UnionWith(setB);
 
-            Console.WriteLine("Union:");
-            Console.WriteLine(string.Join(", ", union));
+            //Console.WriteLine("Union:");
+            //Console.WriteLine(string.Join(", ", union));
 
             #endregion
+            #region Q5 - IntersectWith
+
+            HashSet<int> intersection = new HashSet<int>(setA);
+
+            intersection.IntersectWith(setB);
+
+            Console.WriteLine("Intersection:");
+            Console.WriteLine(string.Join(", ", intersection));
+
+            #endregion
+
+            
 
 
             #endregion
