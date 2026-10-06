@@ -124,9 +124,16 @@
             #endregion
             #region Q4
 
-            bool added = phoneBook.TryAdd("Ahmed", "01111111111");
+            //bool added = phoneBook.TryAdd("Ahmed", "01111111111");
 
-            Console.WriteLine($"Added: {added}");
+            //Console.WriteLine($"Added: {added}");
+
+            #endregion
+            #region Q5
+
+            bool exists = phoneBook.ContainsKey("Khaled");
+
+            Console.WriteLine($"Khaled exists: {exists}");
 
             #endregion
 
