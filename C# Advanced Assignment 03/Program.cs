@@ -164,6 +164,14 @@
             HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
             #endregion
+            #region Q2
+
+            emails.Add("ahmed@test.com");
+            emails.Add("AHMED@test.com");
+            emails.Add("sara@test.com");
+            emails.Add("Sara@Test.Com");
+
+            #endregion
 
             #endregion
 
