@@ -7,7 +7,15 @@
             #region Exercise 1 - Student Grade Manager
                 #region Q1
                 List<int> grades = new List<int> { 85, 92, 78, 95, 88, 70, 100, 65 };
-                #endregion
+            #endregion
+                #region Q2
+            Console.WriteLine("Student Grades:");
+            Console.WriteLine(string.Join(",", grades));
+            Console.WriteLine($"Count :{grades.Count}");
+            Console.WriteLine($"First Grade : {grades[0]}");
+            Console.WriteLine($"Last Grade : {grades[grades.Count - 1]}");
+
+            #endregion
 
             #endregion
         }
