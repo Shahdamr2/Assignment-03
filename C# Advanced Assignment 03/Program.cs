@@ -172,6 +172,11 @@
             emails.Add("Sara@Test.Com");
 
             #endregion
+            #region Q3
+
+            Console.WriteLine($"Count: {emails.Count}");
+
+            #endregion
 
             #endregion
 
